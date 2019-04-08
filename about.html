@@ -23,54 +23,138 @@
 
 <body>
 
-    <header class="header header--download">
+    <header class="header">
 
+            <nav class="header__navigation">
 
+                    <div class="row header__navigation_inner">
+        
+                        <div class="logo">
+                            <a href="" class="logo_link">
+                                <img src="resources/images/Transparent_Long.png" alt="">
+                            </a>
+                        </div>
+        
+                        <div class="main__menu">
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link menu__link--active">Home</a>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">Our Services
+                                    <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+        
+                                </a>
+                                <div class="header__main_dropdown_container">
+        
+                                    <a href="" class="header__drp_link">
+                                        Sports Measurement
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Sponsorship Intelligence
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Entertainment Research
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Consumer Insights
+                                    </a>
+        
+                                    <a href="" class="header__drp_link">
+                                        Digital Monitoring
+                                    </a>
+        
+                                </div>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">Solutions
+                                    <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+        
+                                </a>
+                                <div class="header__main_dropdown_container">
+        
+                                    <a href="" class="header__drp_link">
+                                        Market Research
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Native Intelligence
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Advisory
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Market Evaluation
+                                    </a>
+        
+                                </div>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">
+                                    About Us
+                                </a>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">
+                                    Talent
+                                    <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+        
+                                </a>
+                                <div class="header__main_dropdown_container">
+        
+                                    <a href="" class="header__drp_link">
+                                        Become a team player
+                                    </a>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu__right_items">
+        
+        
+        
+                            <div class="headerinput__container">
+                                <input type="text" class="header__search_input" placeholder="Search">
+                                <input type="submit" id="header__submit_btn" value="">
+                            </div>
+        
+                            <a href="" class="home__btn header__btn">
+                                Suscribe
+                            </a>
+        
+                            <div class="menu__icon">
+                                <img src="resources/images/menu-button-of-three-lines.svg" alt="">
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+            </nav>
 
-        <nav class="header__navigation">
-
-            <div class="row header__navigation_inner">
-
-                <div class="logo">
-                    <a href="" class="logo_link">
-                        <img src="resources/images/Transparent_Long.png" alt="">
-                    </a>
-                </div>
-
-                <div class="main__menu">
-                    <a href="" class="menu__link menu__link--active">Home</a>
-                    <a href="" class="menu__link">Our Services
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">Solutions
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">
-                        About Us
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">
-                        Talent
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                </div>
-
-                <div class="menu__right_items">
-                    <a href="">
-
-                    </a>
-                    <input type="search">
-                </div>
-
-            </div>
-
-        </nav>
+        
 
         <div class="hero__img_container">
 
             <div class="hero__images__slide_inner_container">
-                <div class="slide__download">
-                    <img src="resources/images/tru_hero_two.jpg" class="slidingImage" alt="">
+                <div class="slide__download slide__about">
+                    <img style="display: none;" src="resources/images/tru_hero_two.jpg" class="slidingImage" alt="">
                 </div>
             </div>
 
@@ -414,7 +498,8 @@
                         <h2 class="year__title">2019</h2>
 
                     </div>
-
+                    <span class="connector_resp_right"></span>
+                    <span class="chart__connector"></span>
                     <div class="year_activities">
 
                         <ul>
@@ -422,16 +507,21 @@
                         </ul>
 
                     </div>
-
+                    <span class="chart__connector_right"></span>
                 </div>
 
                 <div class="flowchart__year_container">
+                        <span class="chart__connector_right chart__connector_right--left"></span>
 
+                        <span class="connector_resp_left"></span>
                     <div class="year__box year__box--right">
-
+                        
                         <h2 class="year__title"> 2018</h2>
-
                     </div>
+                    <span class="connector_resp_right"></span>
+
+                    
+                    <span class="chart__connector"></span>
 
                     <div class="year_activities year_activities--left">
 
@@ -445,13 +535,16 @@
                     </div>
 
                 </div>
-                <div class="flowchart__year_container">
 
+                <div class="flowchart__year_container">
+                        <span class="connector_resp_left"></span>
                     <div class="year__box">
 
                         <h2 class="year__title">2017</h2>
 
                     </div>
+                    <span class="connector_resp_right"></span>
+                    <span class="chart__connector"></span>
 
                     <div class="year_activities">
 
@@ -461,15 +554,21 @@
                         </ul>
 
                     </div>
+                    <span class="chart__connector_right"></span>
+
 
                 </div>
-                <div class="flowchart__year_container">
 
+                <div class="flowchart__year_container">
+                        <span class="chart__connector_right chart__connector_right--left"></span>
+                        <span class="connector_resp_left"></span>
                     <div class="year__box year__box--right">
 
                         <h2 class="year__title"> 2016</h2>
 
                     </div>
+                    <span class="connector_resp_right"></span>
+                    <span class="chart__connector"></span>
 
                     <div class="year_activities year_activities--left">
 
@@ -483,12 +582,14 @@
                 </div>
 
                 <div class="flowchart__year_container">
-
+                        <span class="connector_resp_left"></span>
                     <div class="year__box">
 
                         <h2 class="year__title"> 2014</h2>
 
                     </div>
+                    <span class="connector_resp_right"></span>
+                    <span class="chart__connector"></span>
 
                     <div class="year_activities">
 
@@ -501,6 +602,7 @@
                         </ul>
 
                     </div>
+
 
                 </div>
 
@@ -516,7 +618,7 @@
         <div class="row">
 
             <h1 class="story__title advisory__title">
-                ADVISORY BOARD
+                ADVISORY COUNCIL
             </h1>
 
             <div class="advisory__img_container">
@@ -548,7 +650,7 @@
                                 TELEMA DAVIES
                             </h2>
                             <p class="advisory__designation">
-                                co-founder, Head of PRODUCT INNOVATION
+                                co-founder, Head of Product Innovation
                             </p>
                         </div>
                     </div>
@@ -614,6 +716,127 @@
 
     </section>
 
+    <section class="footer__section">
+            <footer class="footer">
+                <div class="footer__inner_container">
+                    <div class="footer__outer_wrapper row">
+    
+                        <div class="footer__list_container">
+                            <a href="" class="footer__link footer__link--title">
+                                About us
+                            </a>
+                            <a href="" class="footer__link">
+                                Vision
+                            </a>
+                            <a href="" class="footer__link">
+                                Mission
+                            </a>
+                            <a href="" class="footer__link">
+                                Team
+                            </a>
+                            <a href="" class="footer__link">
+                                Values
+                            </a>
+                            <a href="" class="footer__link">
+                                Talent
+                            </a>
+                        </div>
+    
+                        <div class="footer__list_container">
+                            <a href="" class="footer__link footer__link--title">
+                                Our Services
+                            </a>
+                            <a href="" class="footer__link">
+                                Sports Measurement
+                            </a>
+                            <a href="" class="footer__link">
+                                Sponsorship Intelligence
+                            </a>
+                            <a href="" class="footer__link">
+                                Entertainment Research
+                            </a>
+                            <a href="" class="footer__link">
+                                Consumer Insights
+                            </a>
+                            <a href="" class="footer__link">
+                                Digital Monitoring
+                            </a>
+                        </div>
+    
+                        <div class="footer__list_container">
+                            <a href="" class="footer__link footer__link--img">
+                                <img src="resources/images/TR2.png" width="45px" height="45px" alt="">
+                            </a>
+                            <a href="" class="home__btn home__btn--contact home__btn--footer home__btn--touch">
+                                Get in touch
+                            </a>
+                            <a href="" class="footer__link--flex">
+                                <a href="" class="footer_soc_link">
+                                    <img src="resources/images/facebook_white.svg" alt="" width="15px">
+                                </a>
+                                <a href="" class="footer_soc_link">
+                                    <img src="resources/images/twitter_white.svg" alt="" width="15px">
+                                </a>
+                                <a href="" class="footer_soc_link">
+                                    <img src="resources/images/linked_white.svg" width="15px" alt="">
+                                </a>
+                                <a href="" class="footer_soc_link">
+                                    <img src="resources/images/insta_white.svg" width="15px" alt="">
+                                </a>
+                                <a href="" class="footer_soc_link">
+                                    <img width="15px" src="resources/images/youtube_white.svg" alt="">
+                                </a>
+                            </a>
+                        </div>
+    
+                        <div class="footer__list_container">
+                            <a href="" class="footer__link footer__link--title">
+                                Solutions </a>
+                            <a href="" class="footer__link">
+                                Market Research </a>
+                            <a href="" class="footer__link">
+                                Native Intelligence </a>
+                            <a href="" class="footer__link">
+                                Market Valuation </a>
+                            <a href="" class="footer__link">
+                                Advisory </a>
+                            <a href="" class="footer__link">
+                                Digital Monitoring
+                            </a>
+                        </div>
+    
+                        <div class="footer__list_container">
+                            <a href="" class="footer__link footer__link--title">
+                                UNSCRIPTED
+                            </a>
+                            <a href="" class="footer__link">
+                                SUBSCRIBE TO OUR NEWSLETTER
+                            </a>
+                            <a href="" class="footer__link">
+                                Sign up to our newsletter
+                            </a>
+                            <a href="" class="footer__link">
+                                Click below to subscribe.
+                            </a>
+    
+                            <a href="" class="home__btn home__btn--contact home__btn--footer">
+                                Subscribe
+                            </a>
+    
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <p class="footer__copy">
+                    Copyright © 2019 TWOREPORT Limited Liability Company. All rights reserved.
+                </p>
+            </footer>
+    
+    
+    </section>
+
+    <script src="resources/js/background.js"></script>
     <script src="resources/js/about.js"></script>
 
 </body>

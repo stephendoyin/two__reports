@@ -4,10 +4,8 @@ let images = document.querySelectorAll(".slidingImage");
 
 
 for (let index = 0; index < backgroundImages.length; index++) {
-    // console.log(backgroundImages[index].childNodes)
-    console.log(images[index].src)
     backgroundImages[index].style.background = `url(${images[index].src})`;
-    backgroundImages[index].style.backgroundPosition = "center";
+    backgroundImages[index].style.backgroundPosition = "top center";
     backgroundImages[index].style.backgroundRepeat = "none";
     backgroundImages[index].style.backgroundSize = "cover";
 }
@@ -92,3 +90,14 @@ $(document).ready(function () {
     })
 
 });
+
+
+let rightAside = document.querySelector(".home__side_right_container");
+let mainLeftContainer = document.querySelector('.home__side_outer_container');
+let homeSideContainer = document.querySelector(".home__side_container");
+
+
+//swap to make responsive for tab and mobile 
+mainLeftContainer.innerHTML += rightAside.outerHTML;
+
+

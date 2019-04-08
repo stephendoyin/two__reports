@@ -1,3 +1,6 @@
+
+
+
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -74,57 +77,33 @@ document.addEventListener("click", closeAllSelect);
 
 
 
-let tableValues = [
-    {
-        move: up,
-        date: "3&ndash;3&ndash;19",
+// let tableValues = [
+//     {
+//         move: up,
+//         date: "3&ndash;3&ndash;19",
 
-    }
-]
+//     }
+// ];
 
 
-// Al-Ahly SC
-// Kaizer Chiefs
-// Raja Club Atheletic
-// Club Africain
-// Azam FC
-// TP Mazembe
-// Gor Mahia
-// Asec Mimosas
-// Township Rollers
-// Al-Merrikh SC
-// Accra Hearts of Oak
-// Mobejaia
-// Enyimba FC
-// Lusaka Dynamos
-//  KCCA FC
 
-// 3,900
+let tabs = document.querySelectorAll(".ranking__tab");
+let tables = document.querySelectorAll(".ranking__data");
 
-// 1,500
+for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", function(){
 
-//      29
+        // remove all table from view
+        for (let m = 0; m < tables.length; m++) {
+            tabs[m].classList.remove("ranking__tab--active");
+            tables[m].classList.remove("tview");
+        }
 
-//      25
+        tabs[i].classList.add("ranking__tab--active");
+        tables[i].classList.add("tview");
 
-//      66
 
-//      99
+    });
+    
+}
 
-//     127
-
-//        5
-
-//       17
-
-//        3
-
-//      78
-
-//        2
-
-//      60
-
-//         1
-
-//       18

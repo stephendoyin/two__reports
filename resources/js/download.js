@@ -1,11 +1,11 @@
-let backgroundImages = document.querySelector(".slide__download");
-let image = document.querySelector(".slidingImage");
+// let backgroundImages = document.querySelector(".slide__download");
+// let image = document.querySelector(".slidingImage");
 
-    // console.log()
-    backgroundImages.style.background = `url(${image.src})`;
-    backgroundImages.style.backgroundPosition = "center";
-    backgroundImages.style.backgroundRepeat = "none";
-    backgroundImages.style.backgroundSize = "cover";
+//     // console.log()
+//     backgroundImages.style.background = `url(${image.src})`;
+//     backgroundImages.style.backgroundPosition = "center";
+//     backgroundImages.style.backgroundRepeat = "none";
+//     backgroundImages.style.backgroundSize = "cover";
 
 
 
@@ -21,11 +21,14 @@ $(document).ready(function () {
                 items: 1,
                 nav: true
             },
-            657: {
+            717: {
                 items: 2,
                 nav: false
             },
-            1000: {
+            1060: {
+                items: 2
+            },
+            1061: {
                 items: 3
             }
         }

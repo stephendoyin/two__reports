@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="resources/css/modal.css"> -->
-    <!-- <link rel="stylesheet" href="vendors/css/animate.css"> -->
+
     <link href="resources/css/styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -23,8 +24,6 @@
 <body>
 
     <header class="header">
-
-
 
         <nav class="header__navigation">
 
@@ -37,28 +36,112 @@
                 </div>
 
                 <div class="main__menu">
-                    <a href="" class="menu__link menu__link--active">Home</a>
-                    <a href="" class="menu__link">Our Services
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">Solutions
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">
-                        About Us
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">
-                        Talent
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
+                    <div class="menu__link_container">
+                        <a href="" class="menu__link menu__link--active">Home</a>
+                    </div>
+
+                    <div class="menu__link_container">
+                        <a href="" class="menu__link">Our Services
+                            <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+
+                        </a>
+                        <div class="header__main_dropdown_container">
+
+                            <a href="" class="header__drp_link">
+                                Sports Measurement
+                            </a>
+
+
+                            <a href="" class="header__drp_link">
+                                Sponsorship Intelligence
+                            </a>
+
+
+                            <a href="" class="header__drp_link">
+                                Entertainment Research
+                            </a>
+
+
+                            <a href="" class="header__drp_link">
+                                Consumer Insights
+                            </a>
+
+                            <a href="" class="header__drp_link">
+                                Digital Monitoring
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="menu__link_container">
+                        <a href="" class="menu__link">Solutions
+                            <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+
+                        </a>
+                        <div class="header__main_dropdown_container">
+
+                            <a href="" class="header__drp_link">
+                                Market Research
+                            </a>
+
+
+                            <a href="" class="header__drp_link">
+                                Native Intelligence
+                            </a>
+
+
+                            <a href="" class="header__drp_link">
+                                Advisory
+                            </a>
+
+
+                            <a href="" class="header__drp_link">
+                                Market Evaluation
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="menu__link_container">
+                        <a href="" class="menu__link">
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="menu__link_container">
+                        <a href="" class="menu__link">
+                            Talent
+                            <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+
+                        </a>
+                        <div class="header__main_dropdown_container">
+
+                            <a href="" class="header__drp_link">
+                                Become a team player
+                            </a>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="menu__right_items">
-                    <a href="">
 
+
+
+                    <div class="headerinput__container">
+                        <input type="text" class="header__search_input" placeholder="Search">
+                        <input type="submit" id="header__submit_btn" value="">
+                    </div>
+
+                    <a href="" class="home__btn header__btn">
+                        Subscribe
                     </a>
-                    <input type="search">
+
+                    <div class="menu__icon">
+                        <img src="resources/images/menu-button-of-three-lines.svg" alt="">
+                    </div>
+
                 </div>
 
             </div>
@@ -102,635 +185,577 @@
 
     <div class="header__sticky_bar">
 
-            <div class="header__stick_flex_bar row">
+        <div class="header__stick_flex_bar row">
+            <div>
+                <a href="" class="home__btn home__btn-responsive">
+                    Contact Us
+                </a>
+            </div>
+
+            <div class="header__sticky_social_wrapper">
                 <div>
-                    <a href="" class="home__btn home__btn-responsive">
-                        Contact Us
+                    <a href="" class="header__sticky_icon_link_wrapper">
+                        <img src="resources/images/facebook_white.svg" class="home__sticky_social_icon" alt="">
                     </a>
                 </div>
-    
-                <div class="header__sticky_social_wrapper">
-                    <div>
-                        <a href="" class="header__sticky_icon_link_wrapper">
-                            <img src="resources/images/facebook_white.svg" class="home__sticky_social_icon" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="header__sticky_icon_link_wrapper">
-                            <img src="resources/images/twitter_white.svg" class="home__sticky_social_icon" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="header__sticky_icon_link_wrapper">
-                            <img src="resources/images/linked_white.svg" class="home__sticky_social_icon" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="header__sticky_icon_link_wrapper">
-                            <img src="resources/images/insta_white.svg" class="home__sticky_social_icon" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="header__sticky_icon_link_wrapper">
-                            <img src="resources/images/youtube_white.svg" class="home__sticky_social_icon" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" class="header__sticky_icon_link_wrapper">
-                            <img src="resources/images/whatsapp_white.svg" class="home__sticky_social_icon" alt="">
-                        </a>
-                    </div>
+                <div>
+                    <a href="" class="header__sticky_icon_link_wrapper">
+                        <img src="resources/images/twitter_white.svg" class="home__sticky_social_icon" alt="">
+                    </a>
                 </div>
-    
-    
+                <div>
+                    <a href="" class="header__sticky_icon_link_wrapper">
+                        <img src="resources/images/linked_white.svg" class="home__sticky_social_icon" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="header__sticky_icon_link_wrapper">
+                        <img src="resources/images/insta_white.svg" class="home__sticky_social_icon" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="header__sticky_icon_link_wrapper">
+                        <img src="resources/images/youtube_white.svg" class="home__sticky_social_icon" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="header__sticky_icon_link_wrapper">
+                        <img src="resources/images/whatsapp_white.svg" class="home__sticky_social_icon" alt="">
+                    </a>
+                </div>
             </div>
+
+
+        </div>
     </div>
 
     <section class="main_center__body_content">
 
-            <div class="row">
+        <div class="row">
 
-                <div class="main__body_flex_container">
-    
-                    <aside class="home__side_container">
-                        <h1 class="home__side_new_title">COMPANY NEWS</h1>
-    
-                        <div class="home__side_inner_container">
-                            <div class="home__side_inner_container--flex">
-                                <div class="home__side_card">
-                                    <div class="home__side_top_img">
+            <div class="main__body_flex_container">
+
+
+                <div class="home__side_outer_container">
+                        <aside class="home__side_container">
+                                <h1 class="home__side_new_title">COMPANY NEWS</h1>
+            
+                                <div class="home__side_inner_container">
+                                    <div class="home__side_inner_container--flex">
+                                        <div class="home__side_card">
+                                            <div class="home__side_top_img">
+                                                <a href="">
+                                                    <img src="resources/images/Market-Research.png" class="home__side_new_img"
+                                                        alt="">
+                                                </a>
+            
+                                            </div>
+                                            <div class="home__time_stamp-title-category">
+                                                <p class="home__time_category">Market Research</p>
+                                                <p class="home__time_stamp">3 hours ago</p>
+            
+                                            </div>
+            
+                                            <p class="home__new_title">ADVICE ABOUT EVERYTHING THAT MATTERS</p>
+                                            <a href="" class="home__btn read__btn home__btn--stroked">Read</a>
+                                        </div>
+            
+                                        <div class="home__side_card">
+                                            <div class="home__side_top_img">
+                                                <a href="">
+                                                    <img src="resources/images/sports.png" class="home__side_new_img" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="home__time_stamp-title-category">
+                                                <p class="home__time_category">Sports</p>
+                                                <p class="home__time_stamp">6 hours ago</p>
+            
+                                            </div>
+                                            <p class="home__new_title">ADVICE ABOUT EVERYTHING THAT MATTERS</p>
+            
+                                            <a href="" class="home__btn read__btn home__btn--stroked">READ</a>
+                                        </div>
+            
+            
+                                        <div class="home__side_card home__side_card--no_border">
+                                            <div class="home__side_top_img">
+                                                <a href="">
+                                                    <img src="resources/images/buhari-osinbajo.jpg" class="home__side_new_img"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="home__time_stamp-title-category">
+                                                <p class="home__time_category">Economy</p>
+                                                <p class="home__time_stamp">12 hours ago</p>
+            
+                                            </div>
+                                            <p class="home__new_title">ADVICE ABOUT EVERYTHING THAT MATTERS</p>
+            
+                                            <a href="" class="home__btn read__btn home__btn--stroked ">READ</a>
+                                        </div>
+                                    </div>
+            
+            
+                                </div>
+            
+                                <!-- <div class="home__ad_box">
                                         <a href="">
-                                            <img src="resources/images/Market-Research.png" class="home__side_new_img" alt="">
+                                            <img src="resources/images/Banner.jpg" alt="">
                                         </a>
-    
-                                    </div>
-                                    <div class="home__time_stamp-title-category">
-                                        <p class="home__time_category">Market Research</p>
-                                        <p class="home__time_stamp">3 hours ago</p>
-    
-                                    </div>
-    
-                                    <p class="home__new_title">ADVICE ABOUT EVERYTHING THAT MATTERS</p>
-                                    <a href="" class="home__btn home__btn--stroked">Read</a>
-                                </div>
-    
-                                <div class="home__side_card">
-                                    <div class="home__side_top_img">
-                                        <a href="">
-                                            <img src="resources/images/sports.png" class="home__side_new_img" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="home__time_stamp-title-category">
-                                        <p class="home__time_category">Sports</p>
-                                        <p class="home__time_stamp">6 hours ago</p>
-    
-                                    </div>
-                                    <p class="home__new_title">ADVICE ABOUT EVERYTHING THAT MATTERS</p>
-    
-                                    <a href="" class="home__btn  home__btn--stroked">READ</a>
-                                </div>
-    
-    
-                                <div class="home__side_card home__side_card--no_border">
-                                    <div class="home__side_top_img">
-                                        <a href="">
-                                            <img src="resources/images/buhari-osinbajo.jpg" class="home__side_new_img" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="home__time_stamp-title-category">
-                                        <p class="home__time_category">Economy</p>
-                                        <p class="home__time_stamp">12 hours ago</p>
-    
-                                    </div>
-                                    <p class="home__new_title">ADVICE ABOUT EVERYTHING THAT MATTERS</p>
-    
-                                    <a href="" class="home__btn home__btn--stroked ">READ</a>
-                                </div>
-                            </div>
-    
-    
-                        </div>
-    
-                        <!-- <div class="home__ad_box">
-                            <a href="">
-                                <img src="resources/images/Banner.jpg" alt="">
-                            </a>
-                        </div> -->
-    
-                    </aside>
-
-                            <div class="home__center_body">
-                                <div class="home__video_container">
-                                    <iframe src="https://www.youtube.com/embed/ScJyAPxUfSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-    
-                                <div class="home__infographic_container">
-                                    <div class="home__info_inner_container">
-                                        <img src="resources/images/sponsors.jpg" alt="">
-                                        <img src="resources/images/info.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <aside class="home__side_right_container">
-                                <div class="home__side_header">
-                                    <h2 class="home_side_text__title">
-                                        KEEP THE TAB ON OUR RANKING:
-                                    </h2>
-
-                                    <p class="home_side_discription">
-                                        Check out our top-ranked lists compiled weekly and monthly
-                                    </p>
-
-                                    <div class="home__side_title">
-                                        <img src="resources/images/TR2.png" width="40px" alt="">
-                                        <h1 class="home__side_right_title">
-                                            weekly
-                                        </h1>
-
-                                        
-                                    </div>
-
-                                    <h2 class="home__side_right_main_title">
-                                            Top Rankings
-                                    </h2>
-                                </div>
-    
-                                <div class="home__table_inner_details_container">
-                                    <div class="home__table_details">
-    
-                                        <div>
-                                            <h3 class="home__side_right_table_title">
-                                                TV
-                                            </h3>
-    
-                                            <table>
-                                                <tr>
-                                                    <td>Pro.</td>
-                                                    <td>Net.</td>
-                                                    <td>Views.</td>
-                                                    <td>Rate.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                            </table>
-    
-                                            <div class="see_more__container">
-                                                <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <div class="home__table_details">
-                                        <div>
-                                            <h3 class="home__side_right_table_title">
-                                                Sports
-                                            </h3>
-    
-                                            <table>
-                                                <tr>
-                                                    <td>Pro.</td>
-                                                    <td>Net.</td>
-                                                    <td>Views.</td>
-                                                    <td>Rate.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                            </table>
-    
-                                            <div class="see_more__container">
-                                                <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-    
-                                    <div class="home__table_details">
-                                        <div>
-                                            <h3 class="home__side_right_table_title">
-                                                Music
-                                            </h3>
-    
-                                            <table>
-                                                <tr>
-                                                    <td>Pro.</td>
-                                                    <td>Net.</td>
-                                                    <td>Views.</td>
-                                                    <td>Rate.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                            </table>
-    
-                                            <div class="see_more__container">
-                                                <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <div class="home__table_details">
-                                        <div>
-                                            <h3 class="home__side_right_table_title">
-                                                Social
-                                            </h3>
-    
-                                            <table>
-                                                <tr>
-                                                    <td>Pro.</td>
-                                                    <td>Net.</td>
-                                                    <td>Views.</td>
-                                                    <td>Rate.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GA</td>
-                                                    <td>CBS</td>
-                                                    <td>11.34</td>
-                                                    <td>600,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BBT</td>
-                                                    <td>AIT</td>
-                                                    <td>56.34</td>
-                                                    <td>53,000</td>
-                                                </tr>
-                                            </table>
-    
-                                            <div class="see_more__container">
-                                                <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-    
+                                    </div> -->
+            
                             </aside>
-
-    
-    
+            
                 </div>
-    
-            </div>
-    
-         
-            <div class="home__container_case_stud row">
+               
+                <div class="home__center_body">
+                    <div class="home__video_container">
+                        <iframe src="https://www.youtube.com/embed/ScJyAPxUfSM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
 
-                    <!-- <div class="home__place_for_tab-mobile">
+                    <div class="home__infographic_container">
+                        <div class="home__info_inner_container">
+                            <img src="resources/images/sponsors.jpg" alt="">
+                            <img src="resources/images/info.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__side_right_outer_container">
+                <aside class="home__side_right_container">
+                    <div class="home__side_header">
+                        <h2 class="home_side_text__title">
+                            KEEP THE TAB ON OUR RANKING:
+                        </h2>
+
+                        <p class="home_side_discription">
+                            Check out our top-ranked lists compiled weekly and monthly
+                        </p>
+
+                        <div class="home__side_title">
+                            <img src="resources/images/TR2.png" width="40px" alt="">
+                            <h1 class="home__side_right_title">
+                                weekly
+                            </h1>
+
+
+                        </div>
+
+                        <h2 class="home__side_right_main_title">
+                            Top Rankings
+                        </h2>
+                    </div>
+
+                    <div class="home__table_outer_details_container">
+                    <div class="home__table_inner_details_container">
+                        <div class="home__table_details">
+
+                            <div>
+                                <h3 class="home__side_right_table_title">
+                                    TV
+                                </h3>
+
+                                <table>
+                                    <tr>
+                                        <td>Pro.</td>
+                                        <td>Net.</td>
+                                        <td>Views.</td>
+                                        <td>Rate.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                </table>
+
+                                <div class="see_more__container">
+                                    <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="home__table_details">
+                            <div>
+                                <h3 class="home__side_right_table_title">
+                                    Sports
+                                </h3>
+
+                                <table>
+                                    <tr>
+                                        <td>Pro.</td>
+                                        <td>Net.</td>
+                                        <td>Views.</td>
+                                        <td>Rate.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                </table>
+
+                                <div class="see_more__container">
+                                    <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="home__table_details">
+                            <div>
+                                <h3 class="home__side_right_table_title">
+                                    Music
+                                </h3>
+
+                                <table>
+                                    <tr>
+                                        <td>Pro.</td>
+                                        <td>Net.</td>
+                                        <td>Views.</td>
+                                        <td>Rate.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                </table>
+
+                                <div class="see_more__container">
+                                    <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="home__table_details">
+                            <div>
+                                <h3 class="home__side_right_table_title">
+                                    Social
+                                </h3>
+
+                                <table>
+                                    <tr>
+                                        <td>Pro.</td>
+                                        <td>Net.</td>
+                                        <td>Views.</td>
+                                        <td>Rate.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA</td>
+                                        <td>CBS</td>
+                                        <td>11.34</td>
+                                        <td>600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBT</td>
+                                        <td>AIT</td>
+                                        <td>56.34</td>
+                                        <td>53,000</td>
+                                    </tr>
+                                </table>
+
+                                <div class="see_more__container">
+                                    <a href="" class="home__btn home__btn--stroked home__btn--dark">See More</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    </div>
+                </aside>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="home__container_case_stud row">
+
+            <!-- <div class="home__place_for_tab-mobile">
         
                     </div> -->
-        
-                    <div class="home__ad_box">
-                        <a href="">
-                            <img src="resources/images/Banner.jpg" alt="">
-                        </a>
+
+            <div class="home__ad_box">
+                <a href="">
+                    <img src="resources/images/Banner.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="case_study__outer_box">
+                <h2 class="home___case_title">
+                    Case Studies
+                </h2>
+
+                <p class="home___case_title_text">
+                    Learn how individuals and products become success stories in the sports and entertainment sectors.
+                    Using insights from case
+                    studies conducted, understand how businesses and talents become products and are effectively
+                    managed.
+                </p>
+
+                <div class="home__outer_case_wrapper">
+
+
+                    <div class="home_case_individual_container">
+                        <a href="https://www.facebook.com"></a>
+                        <img class="home__case_individual_img" src="resources/images/7.png" alt="">
+
+                        <div class="home__case_individuals_details">
+                            <h3 class="home__case_details_title">
+                                MOVIES
+                            </h3>
+                            <p class="home__case__name">
+                                Omotola Jalade E-Kehinde
+                            </p>
+                        </div>
                     </div>
-        
-                    <div class="case_study__outer_box">
-                        <h2 class="home___case_title">
-                            Case Studies
-                        </h2>
-        
-                        <p class="home___case_title_text">
-                            Learn how individuals and products become success stories in the sports and entertainment sectors. Using insights from case
-                            studies conducted, understand how businesses and talents become products and are effectively managed.
+                    <div class="home_case_individual_container">
+                        <a href=""></a>
+                        <img class="home__case_individual_img" src="resources/images/5.png" alt="">
+
+                        <div class="home__case_individuals_details">
+                            <h3 class="home__case_details_title">
+                                MOVIES
+                            </h3>
+                            <p class="home__case__name">
+                                Genevieve Nnaji
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="home_case_individual_container">
+                        <a href=""></a>
+                        <img class="home__case_individual_img" src="resources/images/6.png" alt="">
+
+                        <div class="home__case_individuals_details">
+                            <h3 class="home__case_details_title">
+                                MUSIC
+                            </h3>
+                            <p class="home__case__name">
+                                Yemi Alade
+                            </p>
+                        </div>
+                    </div>
+                    <div class="home_case_individual_container">
+                        <a href=""></a>
+                        <img class="home__case_individual_img" src="resources/images/1.png" alt="">
+
+                        <div class="home__case_individuals_details">
+                            <h3 class="home__case_details_title">
+                                SPORTS
+                            </h3>
+                            <p class="home__case__name">
+                                Blessing Okogbere
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="home_section__sign_up">
+
+
+        <div class="row home__sign_up_container">
+            <div class="home__sign_up_content">
+                <h1 class="home__sign_up_title">
+                    Sign up to
+                    <span class="unscripted">
+                        <img src="resources/images/unscripted logo.png" alt="">
+                    </span> Newsletter and never miss an update.
+                </h1>
+
+                <a href="" class="home__btn home__btn--contact home__btn--suscribe">Subscribe</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="home_section_for_news">
+
+        <div class="sectional__news_container row">
+
+
+            <div class="sectional__new_first_container sectional__new_first_container--desktop">
+
+                <div class="sectional__small_card">
+                    <div class="home__sectional_img_cont">
+                        <img src="resources/images/bnw.jpg" alt="">
+                    </div>
+                    <div class="home__sectional__card_content">
+                        <p class="home__sectional_txt">
+                            African Football: Celebrating the Africa Cup of Nations
                         </p>
-        
-                        <div class="home__outer_case_wrapper">
-        
-                            
-                                <div class="home_case_individual_container">
-                                    <a href="https://www.facebook.com"></a>
-                                    <img class="home__case_individual_img" src="resources/images/7.png" alt="">
-        
-                                    <div class="home__case_individuals_details">
-                                        <h3 class="home__case_details_title">
-                                            MOVIES
-                                        </h3>
-                                        <p class="home__case__name">
-                                            Omotola Jalade E-Kehinde
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="home_case_individual_container">
-                                    <a href=""></a>
-                                    <img class="home__case_individual_img" src="resources/images/5.png" alt="">
-        
-                                    <div class="home__case_individuals_details">
-                                        <h3 class="home__case_details_title">
-                                            MOVIES
-                                        </h3>
-                                        <p class="home__case__name">
-                                            Genevieve Nnaji
-                                        </p>
-                                    </div>
-                                </div>
-                          
-        
-                            
-                                <div class="home_case_individual_container">
-                                    <a href=""></a>
-                                    <img class="home__case_individual_img" src="resources/images/6.png" alt="">
-        
-                                    <div class="home__case_individuals_details">
-                                        <h3 class="home__case_details_title">
-                                            MUSIC
-                                        </h3>
-                                        <p class="home__case__name">
-                                            Yemi Alade
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="home_case_individual_container">
-                                    <a href=""></a>
-                                    <img class="home__case_individual_img" src="resources/images/1.png" alt="">
-        
-                                    <div class="home__case_individuals_details">
-                                        <h3 class="home__case_details_title">
-                                            SPORTS
-                                        </h3>
-                                        <p class="home__case__name">
-                                            Blessing Okogbere
-                                        </p>
-                                    </div>
-                                </div>
-                            
-                        </div>
-        
-                    </div>
-        
-        
-                </div>
-
-        </section>
-
-        <section class="home_section__sign_up">
-
-
-                <div class="row home__sign_up_container">
-                    <div class="home__sign_up_content">
-                        <h1 class="home__sign_up_title">
-                            Sign up to
-                            <span class="unscripted">
-                                <img src="resources/images/unscripted logo.png" alt="">
-                            </span> Newsletter and never miss an update.
-                        </h1>
-        
-                        <a href="" class="home__btn home__btn--contact">Suscribe</a>
+                        <a href="" class="home__btn home__card_btn">Read</a>
                     </div>
                 </div>
-        
-        
-        </section> 
 
-        <section class="home_section_for_news">
+                <div class="sectional__small_card">
+                    <div class="home__sectional_img_cont">
+                        <img src="resources/images/pics.jpg" alt="">
+                    </div>
+                    <div class="home__sectional__card_content">
+                        <p class="home__sectional_txt">
+                            Women are dissatified with sports sponsorship in Nigeria.
+                        </p>
+                        <a href="" class="home__btn home__card_btn">Read</a>
+                    </div>
+                </div>
 
-                <div class="sectional__news_container row">
-        
-        
-                    <div class="sectional__new_first_container sectional__new_first_container--desktop">
-        
-                        <div class="sectional__small_card">
-                            <div class="home__sectional_img_cont">
-                                <img src="resources/images/bnw.jpg" alt="">
-                            </div>
-                            <div class="home__sectional__card_content">
-                                <p class="home__sectional_txt">
-                                    African Football: Celebrating the Africa Cup of Nations
-                                </p>
-                                <a href="" class="home__btn home__card_btn">Read</a>
-                            </div>
-                        </div>
-        
-                        <div class="sectional__small_card">
-                            <div class="home__sectional_img_cont">
-                                <img src="resources/images/pics.jpg" alt="">
-                            </div>
-                            <div class="home__sectional__card_content">
-                                <p class="home__sectional_txt">
-                                    Women are dissatified with sports sponsorship in Nigeria.
-                                </p>
-                                <a href="" class="home__btn home__card_btn">Read</a>
-                            </div>
-                        </div>
-        
+            </div>
+
+
+            <div class="sectional__new_mid_container">
+
+                <div class="sectional__big_card">
+                    <div class="home__sectional_img_cont home__sectional_img_cont--big">
+                        <img src="resources/images/img_hd.jpg" alt="">
                     </div>
-        
-        
-                    <div class="sectional__new_mid_container">
-        
-                        <div class="sectional__big_card">
-                            <div class="home__sectional_img_cont home__sectional_img_cont--big">
-                                <img src="resources/images/img_hd.jpg" alt="">
-                            </div>
-                            <div class="home__sectional__card_content home__sectional__card_content--big">
-                                <p class="home__sectional_txt home__sectional_txt--big">
-                                    Mobile Apps to Drive World Cup Consumption Among Nigerians, Reveals Media Study
-                                    <br>
-                                    <br> ...as TV remains key medium to view Mundial
-                                </p>
-                                <p class="home__sectional__txt--more">
-                                    In a study conducted by CampsBay Media and TWOREPORT, 28 percent of Nigeria football fans will track and consume information
-                                    related to the World Cup through the use of mobile applications on their smart devices. The findings
-                                    indicate that device users - smartphones and tablets - are more than likely to spend more on
-                                    mobile data subscription during the period of the World Cup...
-        
-                                </p>
-                                <a href="" class="home__btn home__card_btn">Read</a>
-                            </div>
-        
-                        </div>
-        
+                    <div class="home__sectional__card_content home__sectional__card_content--big">
+                        <p class="home__sectional_txt home__sectional_txt--big">
+                            Mobile Apps to Drive World Cup Consumption Among Nigerians, Reveals Media Study
+                            <br>
+                            <br> ...as TV remains key medium to view Mundial
+                        </p>
+                        <p class="home__sectional__txt--more">
+                            In a study conducted by CampsBay Media and TWOREPORT, 28 percent of Nigeria football fans
+                            will track and consume information
+                            related to the World Cup through the use of mobile applications on their smart devices. The
+                            findings
+                            indicate that device users - smartphones and tablets - are more than likely to spend more on
+                            mobile data subscription during the period of the World Cup...
+
+                        </p>
+                        <a href="" class="home__btn home__card_btn">Read</a>
                     </div>
-        
-                    <div class="sectional__new_third_container">
-        
-                        <div class="sectional__small_card">
-                            <div class="home__sectional_img_cont">
-                                <img src="resources/images/pixabaynigeria.png" alt="">
-                            </div>
-                            <div class="home__sectional__card_content">
-                                <p class="home__sectional_txt">
-                                    African Football: Celebrating the Africa Cup of Nations
-                                </p>
-                                <a href="" class="home__btn home__card_btn">Read</a>
-                            </div>
-                        </div>
-        
-                        <div class="sectional__small_card">
-                            <div class="home__sectional_img_cont">
-                                <img src="resources/images/womenandsports.jpg" alt="">
-                            </div>
-                            <div class="home__sectional__card_content">
-                                <p class="home__sectional_txt">
-                                    African Football: Celebrating the Africa Cup of Nations
-                                </p>
-                                <a href="" class="home__card_btn home__btn">Read</a>
-                            </div>
-                        </div>
-        
-                    </div>
-        
+
                 </div>
-        
-            </section>
-        
-            <section class="home_section_for_news--tab--mobile">
-        
-        
-                <div class="home__previous_btn home__sec_previous">
-                    <img src="resources/images/previous_red.png" class="home__sec_previous" alt="">
+
+            </div>
+
+            <div class="sectional__new_third_container">
+
+                <div class="sectional__small_card">
+                    <div class="home__sectional_img_cont">
+                        <img src="resources/images/pixabaynigeria.png" alt="">
+                    </div>
+                    <div class="home__sectional__card_content">
+                        <p class="home__sectional_txt">
+                            African Football: Celebrating the Africa Cup of Nations
+                        </p>
+                        <a href="" class="home__btn home__card_btn">Read</a>
+                    </div>
                 </div>
-        
-                <div class="home__next_btn home__next_btn--shift home__sec_next">
-                    <img src="resources/images/next_red.png" class="home__sec_next" alt="">
+
+                <div class="sectional__small_card">
+                    <div class="home__sectional_img_cont">
+                        <img src="resources/images/womenandsports.jpg" alt="">
+                    </div>
+                    <div class="home__sectional__card_content">
+                        <p class="home__sectional_txt">
+                            African Football: Celebrating the Africa Cup of Nations
+                        </p>
+                        <a href="" class="home__card_btn home__btn">Read</a>
+                    </div>
                 </div>
-                <div class="owl-carousel owl_three">
-        
-                    <div class="sectional__small_card">
-                        <div class="home__sectional_img_cont">
-                            <img src="resources/images/bnw.jpg" alt="">
-                        </div>
-                        <div class="home__sectional__card_content">
-                            <p class="home__sectional_txt">
-                                African Football: Celebrating the Africa Cup of Nations
-                            </p>
-                            <a href="" class="home__btn home__card_btn">Read</a>
-                        </div>
-                    </div>
-        
-                    <div class="sectional__small_card">
-                        <div class="home__sectional_img_cont">
-                            <img src="resources/images/pics.jpg" alt="">
-                        </div>
-                        <div class="home__sectional__card_content">
-                            <p class="home__sectional_txt">
-                                Women are dissatified with sports sponsorship in Nigeria.
-                            </p>
-                            <a href="" class="home__btn home__card_btn">Read</a>
-                        </div>
-                    </div>
-        
-        
-                    <div class="sectional__small_card">
-                        <div class="home__sectional_img_cont">
-                            <img src="resources/images/pixabaynigeria.png" alt="">
-                        </div>
-                        <div class="home__sectional__card_content">
-                            <p class="home__sectional_txt">
-                                African Football: Celebrating the Africa Cup of Nations
-                            </p>
-                            <a href="" class="home__btn home__card_btn">Read</a>
-                        </div>
-                    </div>
-        
-                    <div class="sectional__small_card">
-                        <div class="home__sectional_img_cont">
-                            <img src="resources/images/womenandsports.jpg" alt="">
-                        </div>
-                        <div class="home__sectional__card_content">
-                            <p class="home__sectional_txt">
-                                African Football: Celebrating the Africa Cup of Nations
-                            </p>
-                            <a href="" class="home__card_btn home__btn">Read</a>
-                        </div>
-                    </div>
-        
-        
-                </div>
-        
-        
-        
-        
-        
-        
-            </section>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <section class="home_section_for_news--tab--mobile home_section_for_news--tab--download">
@@ -942,7 +967,10 @@
                             SUBSCRIBE TO OUR NEWSLETTER
                         </a>
                         <a href="" class="footer__link">
-                            Sign up to our newsletter, click below to subscribe.
+                            Sign up to our newsletter
+                        </a>
+                        <a href="" class="footer__link">
+                            Click below to subscribe.
                         </a>
 
                         <a href="" class="home__btn home__btn--contact home__btn--footer">

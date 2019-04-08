@@ -23,50 +23,135 @@
 
     <header class="header header--ranking">
 
-        <nav class="header__navigation">
+    <nav class="header__navigation">
 
-            <div class="row header__navigation_inner">
-
-                <div class="logo">
-                    <a href="" class="logo_link">
-                        <img src="resources/images/Transparent_Long.png" alt="">
-                    </a>
-                </div>
-
-                <div class="main__menu">
-                    <a href="" class="menu__link menu__link--active">Home</a>
-                    <a href="" class="menu__link">Our Services
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">Solutions
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">
-                        About Us
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                    <a href="" class="menu__link">
-                        Talent
-                        <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
-                    </a>
-                </div>
-
-                <div class="menu__right_items">
-                    <a href="">
-
-                    </a>
-                    <input type="search">
-                </div>
-
-            </div>
-
-        </nav>
+                    <div class="row header__navigation_inner">
+        
+                        <div class="logo">
+                            <a href="" class="logo_link">
+                                <img src="resources/images/Transparent_Long.png" alt="">
+                            </a>
+                        </div>
+        
+                        <div class="main__menu">
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link menu__link--active">Home</a>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">Our Services
+                                    <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+        
+                                </a>
+                                <div class="header__main_dropdown_container">
+        
+                                    <a href="" class="header__drp_link">
+                                        Sports Measurement
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Sponsorship Intelligence
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Entertainment Research
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Consumer Insights
+                                    </a>
+        
+                                    <a href="" class="header__drp_link">
+                                        Digital Monitoring
+                                    </a>
+        
+                                </div>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">Solutions
+                                    <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+        
+                                </a>
+                                <div class="header__main_dropdown_container">
+        
+                                    <a href="" class="header__drp_link">
+                                        Market Research
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Native Intelligence
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Advisory
+                                    </a>
+        
+        
+                                    <a href="" class="header__drp_link">
+                                        Market Evaluation
+                                    </a>
+        
+                                </div>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">
+                                    About Us
+                                </a>
+                            </div>
+        
+                            <div class="menu__link_container">
+                                <a href="" class="menu__link">
+                                    Talent
+                                    <img src="resources/images/Polygon.svg" class="header__main_dropdown_arrow" alt="">
+        
+                                </a>
+                                <div class="header__main_dropdown_container">
+        
+                                    <a href="" class="header__drp_link">
+                                        Become a team player
+                                    </a>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="menu__right_items">
+        
+        
+        
+                            <div class="headerinput__container">
+                                <input type="text" class="header__search_input" placeholder="Search">
+                                <input type="submit" id="header__submit_btn" value="">
+                            </div>
+        
+                            <a href="" class="home__btn header__btn">
+                                Subscribe
+                            </a>
+        
+                            <div class="menu__icon">
+                                <img src="resources/images/menu-button-of-three-lines.svg" alt="">
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+    </nav>
 
         <div class="hero__img_container">
 
             <div class="hero__images__slide_inner_container">
                 <div class="slide__download sliding__ranking">
-                    <img src="resources/images/talent_hero.jpg" class="slidingImage" alt="">
+                    <!-- <img src="resources/images/hero__bg_ranking.jpg" class="slidingImage" alt=""> -->
                 </div>
             </div>
 
@@ -91,13 +176,13 @@
 
     </section>
 
-    <section>
+    <section class="rank__table_section">
 
         <div class="row">
 
             <div class="ranking__tab-cotainer">
 
-                <div class="ranking__tab">
+                <div class="ranking__tab ranking__tab--active">
 
                     <p class="ranking__tab_text">
                         TV
@@ -152,236 +237,1379 @@
 
                     <div class="custom-select">
                         <select>
-                            <option value="0">Latest Sport Update</option>
-                            <option value="1">Highest Price</option>
-                            <option value="2">Lowest Price</option>
+                            <option value="0">Latest Player Update</option>
+                            <option value="1">Latest Player Update</option>
+                            <option value="2">Latest Club Update</option>
                             <option value="3">Newest</option>
-                            <option value="4">Most Popular</option>
-                            <option value="5">Best Rating</option>
                         </select>
                     </div>
                 </div>
 
             </div>
 
-            <table class="ranking__data">
+            <div class="table__wrapper">
+                    <table class="ranking__data tv tview">
 
 
-                <thead>
-                    <tr>
-                        <th>RANK</th>
-                        <th>DATE</th>
-                        <th>TEAM</th>
-                        <th>TWITTER
-                            <br> (000+)
-                        </th>
-                        <th>&plus;
-                            <br> &minus;
-                        </th>
-                        <th>INSTAGRAM
-                            <br>(000+)</th>
-                        <th>&plus;
-                            <br> &minus;
-                        </th>
-                        <th>FACEBOOK
-                            <br>(000+)</th>
-                        <th>&plus;
-                            <br> &minus;
-                        </th>
-                        <th>TOTAL
-                            <br>(000+)</th>
-                    </tr>
-                </thead>
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>DATE</th>
+                                    <th>TEAM</th>
+                                    <th>TWITTER
+                                        <br> (000+)
+                                    </th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>INSTAGRAM
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>FACEBOOK
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>TOTAL
+                                        <br>(000+)</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3&ndash;3&ndash;19</td>
+                                    <td>Al-Ahly SC</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>11,765</td>
+                                    <td>&minus;</td>
+                                    <td>19,565</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+            
+                                <tfoot>
+                                    <tr>
+                                       <td colspan = "20">Source : TWOREPORT Social Tracker.</td>
+                                    </tr>
+                                 </tfoot>
+            
+            
+                            </tbody>
+            
+            
+            
+            
+                        </table>
+            </div>
+            
+            <div class="table__wrapper">
+                    <table class="ranking__data radio">
 
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>3&ndash;3&ndash;19</td>
-                        <td>Al-Ahly SC</td>
-                        <td>3,900</td>
-                        <td>&minus;</td>
-                        <td>3,900</td>
-                        <td>&minus;</td>
-                        <td>11,765</td>
-                        <td>&minus;</td>
-                        <td>19,565</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>&Prime;</td>
-                        <td>Kaizer Chiefs</td>
-                        <td>1,500</td>
-                        <td>&minus;</td>
-                        <td>364</td>
-                        <td>&minus;</td>
-                        <td>2,917</td>
-                        <td>&minus;</td>
-                        <td>4,781</td>
-                    </tr>
+
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>DATE</th>
+                                    <th>RADIO</th>
+                                    <th>TWITTER
+                                        <br> (000+)
+                                    </th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>INSTAGRAM
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>FACEBOOK
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>TOTAL
+                                        <br>(000+)</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3&ndash;3&ndash;19</td>
+                                    <td>Al-Ahly SC</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>11,765</td>
+                                    <td>&minus;</td>
+                                    <td>19,565</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+            
+                                <tfoot>
+                                    <tr>
+                                       <td colspan = "20">Source : TWOREPORT Social Tracker.</td>
+                                    </tr>
+                                 </tfoot>
+            
+            
+                            </tbody>
+            
+            
+            
+            
+                        </table>
+            </div>
+            
+            <div class="table__wrapper">
+                    <table class="ranking__data music">
 
 
-                </tbody>
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>DATE</th>
+                                    <th>MUSIC</th>
+                                    <th>TWITTER
+                                        <br> (000+)
+                                    </th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>INSTAGRAM
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>FACEBOOK
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>TOTAL
+                                        <br>(000+)</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3&ndash;3&ndash;19</td>
+                                    <td>Al-Ahly SC</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>11,765</td>
+                                    <td>&minus;</td>
+                                    <td>19,565</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+            
+                                <tfoot>
+                                    <tr>
+                                       <td colspan = "20">Source : TWOREPORT Social Tracker.</td>
+                                    </tr>
+                                 </tfoot>
+            
+            
+                            </tbody>
+            
+            
+            
+            
+                        </table>
+            </div>
+            
+            <div class="table__wrapper">
+                    <table class="ranking__data sports">
 
 
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>DATE</th>
+                                    <th>SPORTS</th>
+                                    <th>TWITTER
+                                        <br> (000+)
+                                    </th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>INSTAGRAM
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>FACEBOOK
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>TOTAL
+                                        <br>(000+)</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3&ndash;3&ndash;19</td>
+                                    <td>Al-Ahly SC</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>11,765</td>
+                                    <td>&minus;</td>
+                                    <td>19,565</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+            
+                                <tfoot>
+                                    <tr>
+                                       <td colspan = "20">Source : TWOREPORT Social Tracker.</td>
+                                    </tr>
+                                 </tfoot>
+            
+            
+                            </tbody>
+            
+            
+            
+            
+                        </table>
+            </div>
+            
+            <div class="table__wrapper">
+                    <table class="ranking__data movie">
 
 
-            </table>
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>DATE</th>
+                                    <th>MOVIE</th>
+                                    <th>TWITTER
+                                        <br> (000+)
+                                    </th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>INSTAGRAM
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>FACEBOOK
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>TOTAL
+                                        <br>(000+)</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3&ndash;3&ndash;19</td>
+                                    <td>Al-Ahly SC</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>11,765</td>
+                                    <td>&minus;</td>
+                                    <td>19,565</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+            
+                                <tfoot>
+                                    <tr>
+                                       <td colspan = "20">Source : TWOREPORT Social Tracker.</td>
+                                    </tr>
+                                 </tfoot>
+            
+            
+                            </tbody>
+            
+            
+            
+            
+                        </table>
+            </div>
+            
+            <div class="table__wrapper">
+                    <table class="ranking__data social">
+
+
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>DATE</th>
+                                    <th>SOCIAL</th>
+                                    <th>TWITTER
+                                        <br> (000+)
+                                    </th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>INSTAGRAM
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>FACEBOOK
+                                        <br>(000+)</th>
+                                    <th>&plus;
+                                        <br> &minus;
+                                    </th>
+                                    <th>TOTAL
+                                        <br>(000+)</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3&ndash;3&ndash;19</td>
+                                    <td>Al-Ahly SC</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>3,900</td>
+                                    <td>&minus;</td>
+                                    <td>11,765</td>
+                                    <td>&minus;</td>
+                                    <td>19,565</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>&Prime;</td>
+                                    <td>Kaizer Chiefs</td>
+                                    <td>1,500</td>
+                                    <td>&minus;</td>
+                                    <td>364</td>
+                                    <td>&minus;</td>
+                                    <td>2,917</td>
+                                    <td>&minus;</td>
+                                    <td>4,781</td>
+                                </tr>
+            
+                                <tfoot>
+                                    <tr>
+                                       <td colspan = "20">Source : TWOREPORT Social Tracker.</td>
+                                    </tr>
+                                 </tfoot>
+            
+            
+                            </tbody>
+            
+            
+            
+            
+                        </table>
+            </div>
+            
+
 
         </div>
 
