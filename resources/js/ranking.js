@@ -87,8 +87,8 @@ document.addEventListener("click", closeAllSelect);
 
 
 
-let tabs = document.querySelectorAll(".ranking__tab");
-let tables = document.querySelectorAll(".ranking__data");
+let tabs = document.querySelectorAll(".rank__table_section .ranking__tab");
+let tables = document.querySelectorAll(".rank__table_section .ranking__data");
 
 for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener("click", function(){
@@ -105,5 +105,43 @@ for (let i = 0; i < tabs.length; i++) {
 
     });
     
+}
+// 1. GRAB TABLES FROM HTML
+// 2. GRAB BUTTONS FROM HTML
+// 3. LOOP THRU ALL TABLES, THEN HIDE ALL AND SHOW ONLY FIRST
+// 4. ADD CLICK EVENTS TO BUTTON 
+// 5. INSIDE CLICK EVENT FUNCTION, 
+// 6. ADD REMOVE CLASS THAT REVEALS ALL, 
+// INORDER TO HIDE ALL, 
+// THEN ADD CLASS TO CLICK BUTTON TABLE
+
+// .rank__inner_tab_wrapper .table__wrapper
+
+
+let tabTables = document.querySelectorAll(".rank__inner_tab_wrapper .table__wrapper");
+
+let tabButtons = document.querySelectorAll(".ranking__tab--tab");
+
+let inputSections = document.querySelectorAll(".rank__table_section__tab .ranking__filter_container");
+ 
+console.log(inputSections)
+
+
+for (let i = 0; i < tabTables.length; i++) {
+    tabButtons[i].addEventListener("click", function(){
+        for (let x = 0; x < tabTables.length; x++) {
+            if(i == x){
+                tabTables[x].classList.toggle("table__show");
+                tabButtons[x].classList.add("ranking__tab--active");
+                inputSections[x].classList.toggle("input_view");
+            }else if(i != x) {
+                tabButtons[x].classList.remove("ranking__tab--active");
+                tabTables[x].classList.remove("table__show");
+                inputSections[x].classList.remove("input_view");
+                // break;
+            }
+            
+        }
+    })
 }
 
