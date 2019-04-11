@@ -10,19 +10,19 @@ for (let index = 0; index < backgroundImages.length; index++) {
     backgroundImages[index].style.backgroundSize = "cover";
 }
 
-$(document).ready(function () {
-    let owl = $(".owl_one")
-    owl.owlCarousel({
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 8000,
-        autoplayHoverPause: true,
-        dots: true,
-        dotsEach: true,
-        loop: true
-    });
+// $(document).ready(function () {
+//     let owl = $(".owl_one")
+//     owl.owlCarousel({
+//         items: 1,
+//         autoplay: true,
+//         autoplayTimeout: 8000,
+//         autoplayHoverPause: true,
+//         dots: true,
+//         dotsEach: true,
+//         loop: true
+//     });
 
-});
+// });
 
 
 $(document).ready(function () {
@@ -68,7 +68,7 @@ $(document).ready(function () {
             },
             500: {
                 items: 1,
-                nav: true
+                nav: false
             },
             657: {
                 items: 2,

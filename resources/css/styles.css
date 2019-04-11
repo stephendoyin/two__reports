@@ -230,11 +230,11 @@ aside {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .slide__solution {
-        height: 100vh;
+        height: calc(100vh - 50px);
         background: url(../images/solution__430.png);
-        background-position: 85% top;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -334,12 +334,16 @@ aside {
 
 .hero__case_text_box {
     position: absolute;
-    top: 0;
-    height: 340px;
+    top: 114px;
+    height: 65px;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+section.main__case_content {
+    padding-bottom: 26px;
 }
 
 .case__hero_main_txt {
@@ -437,7 +441,7 @@ aside {
     height: 60vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .header--solution {
         height: calc(100vh - 50px);
     }
@@ -513,7 +517,7 @@ aside {
     }
 
     .slide__talents {
-        height: 100vh;
+        height: calc(100vh - 50px);
         background: url(../images/talent_hero_small.png);
         background-position: top center;
         background-size: cover;
@@ -737,9 +741,9 @@ aside {
     margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .hero__text__content--solution {
-        bottom: 205px
+        bottom: 171px
     }
 }
 
@@ -3823,7 +3827,7 @@ aside {
 
 
 
-.contact_modal {
+.contact_modal, .sub_modal {
     position: absolute;
     top: 0;
     left: 0;
@@ -3834,7 +3838,7 @@ aside {
     z-index: 222;
 }
 
-.contact_modal_inner {
+.contact_modal_inner, .contact_modal_inner--two {
     position: absolute;
     width: 100%;
     display: flex;
@@ -3879,10 +3883,10 @@ aside {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-    width: 780px;
+    width: 853px;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 853px) {
     .contact_modal__content {
         width: auto;
     }
@@ -3896,10 +3900,14 @@ aside {
 }
 
 
-.modal_contact__close {
+.modal_contact__close, .modal_contact__close_two {
     cursor: pointer;
     position: absolute;
     right: 12px;
+}
+
+.modal_contact__close img, .modal_contact__close_two img {
+    width: 15px;
 }
 
 .contact__modal__title__cont {
@@ -4011,7 +4019,7 @@ aside {
     text-decoration: none;
 }
 
-.contact_modal [type=checkbox] {
+.contact_modal [type=checkbox], .sub_modal [type=checkbox] {
     display: inline-block;
     margin-top: 3px;
     margin-right: 7px;
@@ -4028,4 +4036,14 @@ padding: 8px 22px;
 background: #E00909;
 border: none;
 border-radius: 4px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    
+    display: inline-flex;
+    justify-content: center;
+}
+
+.respect__text{
+    padding-top: 18px;
 }
