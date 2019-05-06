@@ -10,21 +10,6 @@ for (let index = 0; index < backgroundImages.length; index++) {
     backgroundImages[index].style.backgroundSize = "cover";
 }
 
-// $(document).ready(function () {
-//     let owl = $(".owl_one")
-//     owl.owlCarousel({
-//         items: 1,
-//         autoplay: true,
-//         autoplayTimeout: 8000,
-//         autoplayHoverPause: true,
-//         dots: true,
-//         dotsEach: true,
-//         loop: true
-//     });
-
-// });
-
-
 $(document).ready(function () {
     let owl = $(".owl-one")
     owl.owlCarousel({
@@ -137,27 +122,59 @@ let dots = document.querySelectorAll(".dots");
 
 
 for (let i = 0; i < dots.length; i++) {
-    dots[i].addEventListener("click", function(){
+    dots[i].addEventListener("click", function () {
 
         for (let x = 0; x < dots.length; x++) {
             dots[x].classList.remove("dots--active");
-            if(i == 0){
-                slideInnerContainer.animate({left: "0%"})
-            }else
-            if(i == 1){
-                slideInnerContainer.animate({left: "-100%"})
-            }else
-            if(i == 2){
-                slideInnerContainer.animate({left: "-200%"})
-            }else
-            if(i == 3){
-                slideInnerContainer.animate({left: "-300%"})
-            }
+            if (i == 0) {
+                slideInnerContainer.animate({ left: "0%" })
+            } else
+                if (i == 1) {
+                    slideInnerContainer.animate({ left: "-100%" })
+                } else
+                    if (i == 2) {
+                        slideInnerContainer.animate({ left: "-200%" })
+                    } else
+                        if (i == 3) {
+                            slideInnerContainer.animate({ left: "-300%" })
+                        }
         }
-        
+
         dots[i].classList.add("dots--active");
 
-        
-        
+
+
     })
+}
+
+let animatedHeader = document.querySelector(".header__animated_logo");
+let fixedTopNav = document.querySelector(".home__header_nav");
+let screenPos = screen.height - 100;
+window.addEventListener("resize", function(){
+    screenPos = screen.height - 100;
+})
+
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY >= screenPos) {
+        if (screen.availWidth > 640) {
+            animatedHeader.classList.add("animate");
+        }
+        fixedTopNav.classList.remove("fixed");
+
+    } else if (window.scrollY < screenPos) {
+        animatedHeader.classList.remove("animate");
+        fixedTopNav.classList.add("fixed")
+    }
+
+});
+
+if (screen.availWidth > 640) {
+    animatedHeader.classList.add("animate");
+}
+
+if (window.scrollY < screenPos) {
+    animatedHeader.classList.remove("animate");
+    fixedTopNav.classList.add("fixed")
 }

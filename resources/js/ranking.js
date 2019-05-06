@@ -90,6 +90,7 @@ document.addEventListener("click", closeAllSelect);
 let tabs = document.querySelectorAll(".rank__table_section .ranking__tab");
 let tables = document.querySelectorAll(".rank__table_section .ranking__data");
 
+
 for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener("click", function(){
 
@@ -97,11 +98,12 @@ for (let i = 0; i < tabs.length; i++) {
         for (let m = 0; m < tables.length; m++) {
             tabs[m].classList.remove("ranking__tab--active");
             tables[m].classList.remove("tview");
+            
         }
 
         tabs[i].classList.add("ranking__tab--active");
         tables[i].classList.add("tview");
-
+        dropArrow[i].classList.add("active");
 
     });
     
@@ -123,8 +125,9 @@ let tabTables = document.querySelectorAll(".rank__inner_tab_wrapper .table__wrap
 let tabButtons = document.querySelectorAll(".ranking__tab--tab");
 
 let inputSections = document.querySelectorAll(".rank__table_section__tab .ranking__filter_container");
- 
-console.log(inputSections)
+
+let dropArrow = document.querySelectorAll(".table__drop")
+
 
 
 for (let i = 0; i < tabTables.length; i++) {
@@ -134,14 +137,18 @@ for (let i = 0; i < tabTables.length; i++) {
                 tabTables[x].classList.toggle("table__show");
                 tabButtons[x].classList.add("ranking__tab--active");
                 inputSections[x].classList.toggle("input_view");
+                dropArrow[x].classList.toggle("active");
             }else if(i != x) {
                 tabButtons[x].classList.remove("ranking__tab--active");
                 tabTables[x].classList.remove("table__show");
                 inputSections[x].classList.remove("input_view");
-                // break;
+                dropArrow[x].classList.remove("active");
+                
             }
             
         }
     })
 }
+
+
 
