@@ -1,5 +1,5 @@
 
-let modalTriggerBtnTwo = document.querySelector(".js_modal_trigger__btn--two");
+let modalTriggerBtnTwo = document.querySelectorAll(".js_modal_trigger__btn--two");
 let closeBtnTwo = document.querySelector(".modal_contact__close_two");
 let subModal = document.querySelector(".sub_modal");
 let innerModalTwo = document.querySelector(".contact_modal_inner--two");
@@ -7,15 +7,16 @@ subModal.style.height = "1500px";
 subModal.style.overflow = "auto";
 
 
+for (let i = 0; i < modalTriggerBtnTwo.length; i++) {
+    modalTriggerBtnTwo[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden";
+        toggleModalTwo();
+    });
+}
 
 
-modalTriggerBtnTwo.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.body.style.height = "100vh";
-    document.body.style.overflow = "hidden";
-    toggleModalTwo();
-
-});
 
 
 closeBtnTwo.addEventListener("click", function () {

@@ -43,9 +43,9 @@ colorRed();
 let dropDownLinksContainer = document.querySelectorAll(".drp_container__mobile");
 let dropDownLinktriggerBtn = document.querySelectorAll(".resp_menu_drp__js");
 
-for (let i = 0; i < dropDownLinktriggerBtn.length; i++) {
-    dropDownLinktriggerBtn[i].addEventListener("click", function(e){
-        e.preventDefault();
-        dropDownLinksContainer[i].classList.toggle("open_menu");
-    })
-}
+// for (let i = 0; i < dropDownLinktriggerBtn.length; i++) {
+//     dropDownLinktriggerBtn[i].addEventListener("click", function(e){
+//         e.preventDefault();
+//         dropDownLinksContainer[i].classList.toggle("open_menu");
+//     })
+// }
