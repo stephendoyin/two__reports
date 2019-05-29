@@ -761,6 +761,11 @@ section.main__case_content {
     position: relative;
 }
 
+.menu__link:link:hover,
+.menu__link:visited:hover {
+    color: #E00909;
+}
+
 .menu__link_container {
     position: relative;
 }
@@ -808,6 +813,13 @@ section.main__case_content {
     border-radius: 0 0 4px 4px;
     overflow: hidden;
     display: none;
+}
+
+.menu__link--active:link,
+.menu__link--active:visited{
+    color: #E00909;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .menu__link_container:hover .header__main_dropdown_container {

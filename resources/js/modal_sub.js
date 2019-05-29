@@ -39,3 +39,61 @@ window.addEventListener("click", function (e) {
 function toggleModalTwo() {
     subModal.classList.toggle("contact_modal--show");
 }
+
+
+
+
+
+let checkBox = document.querySelector(".unchecked");
+let checkBox1 = document.querySelector(".unchecked1");
+let checkBox2 = document.querySelector(".unchecked2");
+
+let deSelectBtn = document.querySelector("#download__deselect");
+
+let deSelectLabelText = document.querySelector(".download__deselect--text");
+
+deselectBtnStatus= deSelectBtn.checked;
+
+checkBoxStatus = !checkBox.checked;
+checkBoxStatus1 = !checkBox1.checked;
+checkBoxStatus2 = !checkBox2.checked;
+
+
+
+
+deSelectBtn.addEventListener( "click" , function(){
+   
+           
+    if (deselectBtnStatus != true){
+
+        deSelectLabelText.textContent = "DeSelect All";
+        
+        deselectBtnStatus = deSelectBtn.checked;
+
+        checkBox.checked = true;
+        checkBox1.checked = true;
+        checkBox2.checked = true;
+
+   } else {
+        deSelectLabelText.textContent = "Select All";
+        
+        deselectBtnStatus = deSelectBtn.checked;
+
+        checkBox.checked = false;
+        checkBox1.checked = false;
+        checkBox2.checked = false;
+
+    }
+
+    
+    
+})
+    
+
+
+
+
+
+
+
+

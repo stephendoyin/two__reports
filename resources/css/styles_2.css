@@ -1,0 +1,236 @@
+/* Privacy Styling css */
+
+
+
+.slide__privacy {
+
+    height: 53vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, -0.8)), url(../images/privacy__bg.jpg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+.main__center--text-container{
+    width: 70%;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.05), -10px -10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 40px;
+    margin-top: 30px;
+    
+}
+
+@media only screen and (max-width:640px){
+    .main__center--text-container {
+        width: 100%;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.05), -10px -10px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        background: #FFFFFF;
+        padding: 40px;
+        margin-top: 30px;
+    }
+}
+.styled__para {
+    line-height: 10px;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+.main__container--sub-privacy{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+
+    
+}
+
+.main__center--text-container p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-top: 14px;
+}
+
+.privacy__section--menu-description {
+
+    margin: 20px;
+    display: none;
+}
+
+.privacy__section--link-container {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.privacy__section--link-container span {
+    margin-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: normal;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #E00909;
+    cursor: pointer;
+}
+.privacy__section--menu-showtext {
+    display: block;
+}
+
+.arrow__toggleable-rotate {
+    transform: rotate(90deg);
+}
+
+.privacy__section--menu-description p {
+
+    margin-left: 26px;
+    
+}
+.hero__text--bg {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 3;
+}
+
+.hero__text--bg{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: -0.02em;
+
+    color: #E00909;
+}
+
+
+/* styling terms of use page */
+
+.header__term--of-use {
+    width: 100%;
+    background: #c4c4c4;
+    position: relative;
+}
+
+.social__media--link-main-container {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+    margin: 60px 0px;
+    
+}
+.social__media--container-wrapper {
+
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+
+.social__handles--wrapper-left {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+
+}
+.social__handles--wrapper-right {
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:60%;
+}
+
+.hero__text--content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero__item--item span{
+    font-family: Sofia Pro;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+
+    color: #E00909;
+}
+
+
+
+.hero__item--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__header--text{
+    font-family: Sofia Pro;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.hero__item--item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+.hero__item--item p {
+    display: flex;
+    align-items: center;
+}
+.hero__text--content-subcontainer{
+    display: flex;
+    width: 56%;
+    align-items: center;
+    justify-content: space-between;
+}
+.top__text--info {
+    display: flex;
+    width: 70%;
+}
+
+.hero__images__slide_inner_container{
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 640px) {
+    .header__about {
+     height: unset;
+}
+}
+
+.js--fixed{
+    position: fixed;
+}
