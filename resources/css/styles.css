@@ -2095,6 +2095,9 @@ section.main__case_content {
     flex-wrap: wrap;
 }
 
+.footer__list_container:first-child {
+    width: 13%;
+}
 
 .footer__list_container:nth-child(3) {
     text-align: center;
@@ -2164,6 +2167,10 @@ section.main__case_content {
         width: 100%;
         text-align: center;
     }
+    .footer__list_container:first-child {
+        width: 100%;
+        text-align: center;
+    }
 
     .footer__list_container:last-child {
         width: 100%;
@@ -2178,7 +2185,17 @@ section.main__case_content {
     font-size: 12px;
 }
 
-
+.privacy__link:link, .privacy__link:visited{
+    padding-top: 40px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    font-family: Montserrat;
+    font-weight: bold;
+}
 
 .footer__link--flex {
     display: flex;
@@ -2200,7 +2217,7 @@ section.main__case_content {
     font-size: 12px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
