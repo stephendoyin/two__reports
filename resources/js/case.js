@@ -1,5 +1,3 @@
-
-
 let caseTextOriginal = document.querySelectorAll(".case__main_paragraph")
 let caseText = document.querySelectorAll(".case__main_paragraph")
 

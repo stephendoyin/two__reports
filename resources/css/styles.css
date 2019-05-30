@@ -2192,8 +2192,22 @@ section.main__case_content {
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    width: 100%;
+    /* width: 100%; */
     font-family: roboto;
+}
+
+.privacy__link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy__link_line{
+    display: inline-block;
+    width: 1px;
+    height: 19px;
+    border-right: 1px solid #FFF;
+    vertical-align: middle;
 }
 
 .footer__link--flex {
