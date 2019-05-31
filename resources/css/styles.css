@@ -2619,6 +2619,8 @@ section.main__case_content {
 @media only screen and (max-width: 500px){
     .team_card_modal{
         width: 100%;
+        position: absolute;
+        top: 0;
     }
 }
 

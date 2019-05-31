@@ -44,3 +44,40 @@ $(document).ready(function () {
     })
 
 });
+
+let modalTriggerer = document.querySelector(".js_modal_trigger__btn");
+let closeBtnFour = document.querySelector(".modal_contact__close");
+let downloadModal = document.querySelector(".contact_modal");
+let downloadInnerModal = document.querySelector(".contact_modal_inner--four");
+downloadModal.style.overflow = "auto";
+
+
+modalTriggerer.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.body.style.height = "100vh";
+    document.body.style.overflow = "hidden";
+    toggleDownloadModal();
+});
+
+
+
+closeBtnFour.addEventListener("click", function () {
+    toggleDownloadModal();
+    document.body.style.height = "unset";
+    document.body.style.overflow = "unset";
+    document.body.removeAttribute("style");
+});
+
+
+window.addEventListener("click", function (e) {
+    if (e.target === downloadInnerModal) {
+        downloadModal.classList.remove("modal__contact--view");
+        document.body.style.height = "unset";
+        document.body.style.overflow = "unset";
+    }
+})
+
+
+function toggleDownloadModal() {
+    downloadModal.classList.toggle("modal__contact--view");
+}
